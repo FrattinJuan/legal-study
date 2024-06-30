@@ -1,26 +1,34 @@
-'use client';
+"use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import {Button} from "antd";
+import { Button, ConfigProvider, theme } from "antd";
+import CarouselHome from "@/components/carouselHome/carouselHome";
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <>
-      <h1>Hello, HOME page</h1>
-      <Image
-              src="/next.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={100}
-              priority
-            />
-      <button type="button" onClick={() => router.push("/dashboard")}>
-        Go to dashboard
-      </button>
-      <Button type="primary">Button</Button>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#00b96b",
+          },
+          components: {
+            FloatButton: {
+              colorPrimary: "#00b96b",
+            }
+          },
+          algorithm: [theme.darkAlgorithm],
+        }}
+      >
+        {/* <h1>Hello, HOME page</h1> */}
+        <CarouselHome />
+        {/* <button type="button" onClick={() => router.push("/dashboard")}>
+          Go to dashboard
+        </button>
+        <Button type="primary">Button</Button> */}
+      </ConfigProvider>
     </>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">

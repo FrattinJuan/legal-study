@@ -1,14 +1,18 @@
+import { ReactNode } from "react";
+import { Layout, Menu } from "antd";
+import { Header, Content, Footer } from "antd/es/layout/layout";
+
+// const {  Content, Footer } = Layout;
+
+
 export default function DashboardLayout({
-    children, // will be a page or nested layout
-  }: {
-    children: React.ReactNode
-  }) {
-    return (
-      <section>
-        {/* Include shared UI here e.g. a header or sidebar */}
-        <nav> Chau, bienvenido</nav>
-   
+  children, // will be a page or nested layout
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <Layout>
         {children}
-      </section>
-    )
-  }
+    </Layout>
+  );
+}
