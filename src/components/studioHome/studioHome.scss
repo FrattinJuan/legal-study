@@ -1,0 +1,20 @@
+@import '../../app/variables.module.scss';
+
+.studioHomeCard {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 0;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.studioHomeTitle {
+    font-family: 'Garamond', serif;
+    color: white!important;
+}
+
+.studioHomeParagraph {
+    text-align: justify;
+    font-family: 'Alegreya Sans', serif;
+    color: white;
+}

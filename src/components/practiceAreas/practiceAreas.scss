@@ -1,0 +1,19 @@
+@import '../../app/variables.module.scss';
+
+.banner {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 0;
+    margin-top: 10%;
+    padding: 60px 0px 60px 0;
+};
+.bannerTitle{
+    font-family: 'Garamond', serif;
+    text-align: center;
+    color: white!important;
+}
+.bannerText{
+    text-align: justify;
+    font-family: 'Alegreya Sans', serif;
+    color: white;
+}

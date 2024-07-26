@@ -1,11 +1,20 @@
-import Link from 'next/link'
- 
+import { Button, Divider, Result } from "antd";
+import Link from "next/link";
+
 export default function NotFound() {
   return (
-    <div>
-      <h2>Not Found</h2>
-      <p>Could not find requested resource</p>
-      <Link href="/">Return Home</Link>
-    </div>
-  )
+    <>
+      <Result
+        status={404}
+        title="404"
+        subTitle="Lo sentimos, la pagina que buscas no existe."
+        extra={
+          <Link href="/">
+            <Button type="default">Volver</Button>
+          </Link>
+        }
+      />
+      <Divider />
+    </>
+  );
 }

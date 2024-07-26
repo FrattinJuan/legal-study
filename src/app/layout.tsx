@@ -3,9 +3,12 @@ import { Inter } from "next/font/google";
 import { FloatButton, Layout, Menu } from "antd";
 import { Header, Content, Footer } from "antd/es/layout/layout";
 import { WhatsAppOutlined } from "@ant-design/icons";
+import Logos_CuestasPatiño from "../../public/img/Logos_CuestasPatiño_Sinfondo-03.png";
+import Image from "next/image";
 
 import "./globals.css";
 import Link from "next/link";
+import FooterBar from "@/components/FooterBar/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +23,15 @@ const items = [
   },
   {
     key: "2",
-    label: <Link href="/dashboard">Dashboard</Link>,
+    label: <Link href="/aboutUs">Quienes somos</Link>,
   },
   {
     key: "3",
-    label: "Item 3",
+    label: <Link href="/practiceAreas">Servicios</Link>,
+  },
+  {
+    key: "4",
+    label: <Link href="/contact">Contacto</Link>,
   },
 ];
 
@@ -46,9 +53,19 @@ export default function RootLayout({
               width: "100%",
               display: "flex",
               alignItems: "center",
+              height: 100,
             }}
           >
-            <div className="demo-logo">CuestasPatinoLogo</div>
+            <Link href="/">
+              <div className="demo-logo">
+                <Image
+                  alt="logo"
+                  width={150}
+                  height={150}
+                  src={Logos_CuestasPatiño}
+                />
+              </div>
+            </Link>
             <Menu
               theme="light"
               mode="horizontal"
@@ -59,16 +76,23 @@ export default function RootLayout({
           </Header>
           <Content>
             {children}
-            <FloatButton
-              shape="circle"
-              type="default"
-              // style={{ backgroundColor: "#00b96b" }}
-              
-              tooltip={<div>Mas informacion</div>}
-              icon={<WhatsAppOutlined />}
-            />
+            <Link
+              href={
+                "https://api.whatsapp.com/send?phone=5493517472345&text=Hola,%20en%20qué%20podemos%20ayudarle?"
+              }
+            >
+              <FloatButton
+                shape="circle"
+                type="default"
+                // style={{ backgroundColor: "#00b96b" }}
+
+                tooltip={<div>Mas informacion</div>}
+                icon={<WhatsAppOutlined />}
+              />
+            </Link>
           </Content>
           <Footer style={{ textAlign: "center" }}>
+            <FooterBar />
             CuestasPatino ©2024 Created by Juan Frattin
           </Footer>
         </Layout>
