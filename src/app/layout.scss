@@ -1,0 +1,14 @@
+@import "./variables.module.scss";
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+  color: $secondary-color !important;
+}
+
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-active::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item:hover::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-submenu-active::after,
+.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom-color: $secondary-color !important;
+}

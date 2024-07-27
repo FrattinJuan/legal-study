@@ -1,0 +1,24 @@
+@import '../variables.module.scss';
+
+.aboutUsTitle {
+    font-family: 'Garamond', serif;
+    color: $secondary-color!important;
+    margin-top: 25vh;
+}
+
+.aboutUsSubtitle {
+    font-family: 'Alegreya Sans', serif;
+    color: $primary-color!important;
+    text-align: justify;
+    margin-top: 5vh;
+    margin-bottom: 35vh!important;
+    // display: flex;
+}
+.aboutUsRow{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: $primary-color!important;
+}
+.aboutUsCard {
+    
+}

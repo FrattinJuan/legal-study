@@ -9,47 +9,88 @@ import {
 } from "@ant-design/icons";
 import Image from "next/image";
 import React from "react";
-import logo from "../../../public/img/Logos_CuestasPatiño_Sinfondo-02.png";
+import logo from "../../../public/img/Logos_CuestasPatiño_Sinfondo-03.png";
+import Link from "next/link";
 
 export default function FooterBar() {
   const data = [
     {
-      title: "Calle 12 Cordoba, Argentina",
+      title:
+        "Miguel C. del Corro 661 - Piso 2 Of. 9 - C.P. X5000BGO - Córdoba, Argentina",
       icon: <EnvironmentOutlined />,
+      link: "https://maps.app.goo.gl/81X9mtqwEpSmzNGx5",
     },
     {
-      title: "+555 555 555",
+      title: "+54 9 351 308 6599",
       icon: <PhoneOutlined />,
+      link: "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20tengo%20una%20consulta%20legal",
     },
     {
-      title: "Whatsapp: +555 555 555",
-      icon: <WhatsAppOutlined />,
+      title: "+54 9 351 747 2345",
+      icon: <PhoneOutlined />,
+      link: "https://api.whatsapp.com/send?phone=54935174723455&text=Hola,%20tengo%20una%20consulta%20legal",
     },
+    // {
+    //   title: "Whatsapp: +555 555 555",
+    //   icon: <WhatsAppOutlined />,
+    // },
     {
       title: "info@cuestaspatino.com.ar",
       icon: <MailOutlined />,
+      link: "https://cuestaspatino.com.ar",
     },
   ];
   return (
     <>
       <Row className="footerBar">
-        <Col span={8} style={{ display: "flex", justifyContent: "center" }}>
+        <Col
+          xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 8,
+          }}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <Image alt="example" src={logo} width={200} height={200} />
         </Col>
-        <Col span={8} style={{ display: "flex", justifyContent: "center" }}>
+        <Col
+          xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 8,
+          }}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <List
             dataSource={data}
             style={{ textAlign: "left" }}
             renderItem={(item) => (
-              <List.Item>
-                {item.icon} {` ` + item.title}
-              </List.Item>
+              <Link href={item.link}>
+                <List.Item>
+                  {item.icon} {` ` + item.title}
+                </List.Item>
+              </Link>
             )}
           ></List>
         </Col>
-        <Col span={8} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Col
+          xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 8,
+          }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Typography.Text strong>
-            <CopyrightOutlined />{` 2024 Cuestas Patino.`}
+            <CopyrightOutlined />
+            {` 2024 Cuestas Patino.`}
           </Typography.Text>
           <br />
           <Typography.Text>{` Todos los derechos reservados. `}</Typography.Text>

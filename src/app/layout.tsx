@@ -7,8 +7,9 @@ import Logos_CuestasPatiño from "../../public/img/Logos_CuestasPatiño_Sinfondo
 import Image from "next/image";
 
 import "./globals.css";
+import './layout.scss';
 import Link from "next/link";
-import FooterBar from "@/components/FooterBar/FooterBar";
+import FooterBar from "@/components/footerBar/footerBar";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -10,7 +10,13 @@ export default function StudioHome() {
   return (
     <>
       <Row>
-        <Col span={18} offset={3}>
+        <Col xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 18,
+            offset: 3,
+          }}>
           <Card
             // title="Nuestro Estudio"
             hoverable={false}
