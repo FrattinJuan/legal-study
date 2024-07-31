@@ -1,0 +1,33 @@
+@import "../variables.module.scss";
+
+.contactTitle {
+  font-family: "Garamond", serif;
+  color: white !important;
+  margin-top: 25vh;
+}
+.contactSubtitle {
+  font-family: "Alegreya Sans", serif;
+  color: white !important;
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 44vh !important;
+}
+.contactRow {
+  background-color: $secondary-color !important;
+}
+.contactRow2 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.contactTitle3 {
+  font-family: "Garamond", serif;
+  color: $primary-color !important;
+  margin-bottom: 5% !important;
+}
+.contactText {
+  font-family: "Alegreya Sans", serif;
+  color: $primary-color !important;
+  text-align: justify;
+  font-size: 15px;
+//   margin-bottom: 5% !important;
+}

@@ -23,12 +23,12 @@ export default function FooterBar() {
     {
       title: "+54 9 351 308 6599",
       icon: <PhoneOutlined />,
-      link: "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20tengo%20una%20consulta%20legal",
+      link: "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20quisiera%20hacer%20una%20consulta%20...",
     },
     {
       title: "+54 9 351 747 2345",
       icon: <PhoneOutlined />,
-      link: "https://api.whatsapp.com/send?phone=54935174723455&text=Hola,%20tengo%20una%20consulta%20legal",
+      link: "https://api.whatsapp.com/send?phone=54935174723455&text=Hola,%20quisiera%20hacer%20una%20consulta%20...",
     },
     // {
     //   title: "Whatsapp: +555 555 555",

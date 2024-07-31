@@ -39,7 +39,7 @@ export default function SocialBar() {
           </Link>
           <Link
             href={
-              "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20tengo%20una%20consulta%20legal"
+              "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20quisiera%20hacer%20una%20consulta%20..."
             }
           >
             <Button

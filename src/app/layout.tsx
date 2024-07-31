@@ -79,7 +79,7 @@ export default function RootLayout({
             {children}
             <Link
               href={
-                "https://api.whatsapp.com/send?phone=5493517472345&text=Hola,%20en%20qué%20podemos%20ayudarle?"
+                "https://api.whatsapp.com/send?phone=5493517472345&text=Hola,%20quisiera%20hacer%20una%20consulta%20..."
               }
             >
               <FloatButton

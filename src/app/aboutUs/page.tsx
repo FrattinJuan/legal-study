@@ -10,7 +10,7 @@ export default function Page() {
   const pathname = usePathname();
   return (
     <>
-      <Row>
+      <Row className="aboutUsRow">
         <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
           <Typography.Title level={1} className="aboutUsTitle">
             Sobre Nosotros
@@ -34,9 +34,9 @@ export default function Page() {
           <Divider />
         </Col>
       </Row>
-      <Row  className="aboutUsRow">
+      <Row  className="aboutUsRow2">
         <Col span={20} offset={2}>
-          <Card>
+          <Card className="aboutUsCard" bordered={false}>
             <Card.Grid hoverable={false} style={{ width: "75%" }}>
               <Typography.Title level={3} className="aboutUsCardTitle">
                 Guadalupe C. Cuestas
@@ -70,9 +70,9 @@ export default function Page() {
           </Card>
         </Col>
       </Row>
-      <Row className="aboutUsRow">
+      <Row className="aboutUsRow2">
         <Col span={20} offset={2} >
-          <Card>
+          <Card className="aboutUsCard" bordered={false}>
             <Card.Grid hoverable={false} style={{ width: "25%" }}>
               <Image src={legalStudy} alt="logo" width={600} height={800} />
             </Card.Grid>

@@ -10,23 +10,22 @@ export default function StudioHome() {
   return (
     <>
       <Row>
-        <Col xs={{
+        <Col
+          xs={{
             span: 24,
           }}
           lg={{
             span: 18,
             offset: 3,
-          }}>
+          }}
+        >
           <Card
             // title="Nuestro Estudio"
             hoverable={false}
             bordered={false}
             className="studioHomeCard"
           >
-            <Card.Grid
-              hoverable={false}
-              style={{ width: "60%", }}
-            >
+            <Card.Grid hoverable={false} style={{ width: "60%" }}>
               <Row>
                 <Col>
                   <Title className="studioHomeTitle" level={3}>
@@ -37,20 +36,13 @@ export default function StudioHome() {
               <Row>
                 <Col>
                   <Paragraph className="studioHomeParagraph">
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Sodales
-                    euismod nisi purus potenti inceptos phasellus fermentum eros
-                    erat. Urna mus faucibus sagittis finibus enim iaculis porta.
-                    Luctus rhoncus aliquam ut efficitur eget torquent risus erat
-                    pellentesque. Aenean luctus hac urna tempor donec taciti
-                    penatibus. Ad varius vel maecenas facilisis lacinia. Posuere
-                    aliquam cursus adipiscing quam leo montes praesent.<br></br>{" "}
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Sodales
-                    euismod nisi purus potenti inceptos phasellus fermentum eros
-                    erat. Urna mus faucibus sagittis finibus enim iaculis porta.
-                    Luctus rhoncus aliquam ut efficitur eget torquent risus erat
-                    pellentesque. Aenean luctus hac urna tempor donec taciti
-                    penatibus. Ad varius vel maecenas facilisis lacinia. Posuere
-                    aliquam cursus adipiscing quam leo montes praesent.
+                    Somos un Estudio Jurídico comprometido con el asesoramiento
+                    legal y la resolución de conflictos.<br /> Nos especializamos en
+                    brindar servicios tanto a empresas como a particulares,
+                    convirtiéndonos en sus aliados estratégicos, entendiendo las
+                    necesidades específicas de cada cliente para proporcionar
+                    estrategias legales que protejan sus intereses y promuevan
+                    su crecimiento.
                   </Paragraph>
                 </Col>
               </Row>
