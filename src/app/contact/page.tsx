@@ -30,9 +30,18 @@ export default function Page() {
         </Col>
       </Row>
       <Row className="contactRow2">
-        <Col span={12}>
+        <Col
+          xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 12,
+          }}
+        >
           <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
-            <Typography.Title className="contactTitle3" level={3}>Donde encontrarnos</Typography.Title>
+            <Typography.Title className="contactTitle3" level={3}>
+              Donde encontrarnos
+            </Typography.Title>
           </Col>
           <Col span={20} offset={2} style={{ marginBottom: "5%" }}>
             <Typography.Text className="contactText">
@@ -54,9 +63,18 @@ export default function Page() {
             />
           </Col>
         </Col>
-        <Col span={12}>
+        <Col
+          xs={{
+            span: 24,
+          }}
+          lg={{
+            span: 12,
+          }}
+        >
           <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
-            <Typography.Title level={3} className="contactTitle3">Envianos tu consulta</Typography.Title>
+            <Typography.Title level={3} className="contactTitle3">
+              Envianos tu consulta
+            </Typography.Title>
           </Col>
           <Col span={20} offset={2}>
             <ContactForm />

@@ -14,7 +14,7 @@ export default function CarouselHome() {
 
   <Carousel arrows autoplay>
     <div>
-      <h3 style={contentStyle}>CuestasPatinio</h3>
+      <h3 style={contentStyle}>CuestasPatiño</h3>
     </div>
     <div>
       <h3 style={contentStyle}>2</h3>

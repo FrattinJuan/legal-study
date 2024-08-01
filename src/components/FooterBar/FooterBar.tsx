@@ -90,7 +90,7 @@ export default function FooterBar() {
         >
           <Typography.Text strong>
             <CopyrightOutlined />
-            {` 2024 Cuestas Patino.`}
+            {` 2024 Cuestas Patiño.`}
           </Typography.Text>
           <br />
           <Typography.Text>{` Todos los derechos reservados. `}</Typography.Text>

@@ -1,6 +1,6 @@
 // components/ContactForm.js
 import React from "react";
-import { Form, Input, Button, InputNumber } from "antd";
+import { Form, Input, Button, InputNumber, message } from "antd";
 import axios from "axios";
 
 const { TextArea } = Input;
@@ -10,13 +10,18 @@ const ContactForm = () => {
 
   const onFinish = async (values: any) => {
     try {
-      const response = await axios.post("../../api/send-email", values);
+      console.log(values);
+      const response = await axios.post("https://formspree.io/f/manwobjq", values);
+      console.log('Hola',response);
       if (response.status === 200) {
         form.resetFields();
-        alert("Your message has been sent successfully!");
+        message.success("Tu mensaje ha sido enviado con exito!");
+        // alert("Your message has been sent successfully!");
       }
     } catch (error) {
-      alert("There was an error sending your message. Please try again.");
+      console.error(error);
+      message.error("Hubo un error al enviar el mensaje. Por favor intenta de nuevo.");
+      // alert("There was an error sending your message. Please try again.");
     }
   };
 
@@ -40,10 +45,10 @@ const ContactForm = () => {
         <Input placeholder="Email" />
       </Form.Item>
       <Form.Item
-        name="email"
+        name="phone"
         // label="Email"
         rules={[
-          { required: true, message: "Por favor ingresa tu email" },
+          { required: true, message: "Por favor ingresa tu numero de telefono" },
         ]}
       >
         <InputNumber style={{ width: "100%" }} placeholder="Telefono" />
