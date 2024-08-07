@@ -60,7 +60,7 @@ export default function Staff() {
               <Card.Meta
                 title="Guadalupe C. Cuestas "
                 description={
-                  <p>
+                  <p style={{fontSize: "15px" }}>
                     M.P. 1-41509
                     <br />
                     M.F. T° 509 F° 128
@@ -127,7 +127,7 @@ export default function Staff() {
               <Card.Meta
                 title="Joaquín Patiño"
                 description={
-                  <p>
+                  <p style={{fontSize: "15px" }}>
                     M.P. 1-41857 <br />
                     M.F. T° 509 F° 403 <br />
                     jpatino@cuestaspatino.com.ar <br />

@@ -9,7 +9,7 @@ import Image from "next/image";
 import "./globals.css";
 import "./layout.scss";
 import Link from "next/link";
-import FooterBar from "@/components/footerBar/footerBar";
+import FooterBar from "@/components/FooterBar/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
