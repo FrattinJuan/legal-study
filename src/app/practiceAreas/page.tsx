@@ -10,6 +10,7 @@ import {
   AreaChartOutlined,
   AuditOutlined,
   CommentOutlined,
+  FileDoneOutlined 
 } from "@ant-design/icons";
 import SocialBar from "@/components/socialBar/socialBar";
 import "./practiceAreas.scss";
@@ -21,7 +22,7 @@ export default function Page() {
       key: "1",
       label: (
         <>
-          <FormOutlined className="practiceAreasIcon" />
+          <AreaChartOutlined  className="practiceAreasIcon" />
           {" Asesoramiento Empresarial"}
         </>
       ),
@@ -39,7 +40,7 @@ export default function Page() {
       key: "2",
       label: (
         <>
-          <HighlightOutlined className="practiceAreasIcon" />
+          <FileDoneOutlined  className="practiceAreasIcon" />
           {"Derecho Civil y Comercial"}
         </>
       ),
@@ -59,7 +60,7 @@ export default function Page() {
       key: "3",
       label: (
         <>
-          <AreaChartOutlined className="practiceAreasIcon" />
+          <FormOutlined className="practiceAreasIcon" />
           {"Derecho Administrativo y Regulatorio"}
         </>
       ),
@@ -171,7 +172,7 @@ export default function Page() {
         </Col>
       </Row>
       <Row className="practiceAreasRow2">
-        <Col span={20} offset={2}>
+        <Col span={14} offset={5}>
           <Collapse
             className="practiceAreasCollapse"
             expandIconPosition="end"

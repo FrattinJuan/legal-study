@@ -1,14 +1,17 @@
 import { Avatar, Card, Col, Divider, Row, Typography } from "antd";
 import React from "react";
-import { UserOutlined } from "@ant-design/icons";
+import { UserOutlined, LinkedinOutlined } from "@ant-design/icons";
 import legalStudy from "../../../public/img/legalStudyHome.png";
+import Joaco from "../../../public/img/joaco3.jpg";
+import Guada from "../../../public/img/guada3.jpg";
 import Image from "next/image";
 import "./staff.scss";
+import Link from "next/link";
 
 export default function Staff() {
   return (
     <>
-      <Row style={{ marginTop: "10%", marginBottom: "10%" }}>
+      <Row style={{ marginTop: "5%", marginBottom: "5%" }}>
         <Col span={24}>
           <Typography.Title level={1} className="staffTitle">
             Profesionales
@@ -29,20 +32,29 @@ export default function Staff() {
             }}
             lg={{
               span: 12,
-              offset: 6,
+              offset: 8,
             }}
           >
             <Card
               className="staffCard"
+              bordered={false}
               // cover={<Avatar size={100} icon={<UserOutlined />} />}
-              cover={
-                <Image
-                  alt="example"
-                  src={legalStudy}
-                  width={100}
-                  height={100}
-                />
-              }
+              // cover={
+              //   <Image
+              //     // style={{
+              //     //   width: "100%",
+              //     //   // height: "auto",
+              //     //   objectFit: "fill",
+              //     //   borderRadius: "0",
+              //     // }}
+              //     className="staffCardImage"
+              //     alt="example"
+              //     src={Guada}
+              //     // width={100}
+              //     // height={50}
+              //   />
+              // }
+              // cover={<UserOutlined style={{ fontSize: "120px" }} />}
             >
               {" "}
               <Card.Meta
@@ -55,7 +67,13 @@ export default function Staff() {
                     <br />
                     gcuestas@cuestaspatino.com.ar
                     <br />
-                    Tel 3513086599
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/guadalupe-cuestas-6b544719b/"
+                      }
+                    >
+                      <LinkedinOutlined style={{ fontSize: "20px" }} />
+                    </Link>
                   </p>
                 }
               />
@@ -66,31 +84,44 @@ export default function Staff() {
         {/* <Col span={1} style={{ display: "flex", justifyContent: "center" }}>
           <Divider type="vertical" style={{ height: "100%" }} />
         </Col> */}
-        <Col xs={{
+        <Col
+          xs={{
             span: 24,
           }}
           lg={{
             span: 12,
-          }}>
-          <Col  xs={{
+          }}
+        >
+          <Col
+            xs={{
               span: 22,
               offset: 1,
             }}
             lg={{
               span: 12,
-              offset: 6,
-            }}>
+              offset: 4,
+            }}
+          >
             <Card
               className="staffCard"
+              bordered={false}
               // cover={<Avatar size={100} icon={<UserOutlined />} />}
-              cover={
-                <Image
-                  alt="example"
-                  src={legalStudy}
-                  width={100}
-                  height={100}
-                />
-              }
+              // cover={
+              //   <Image
+              //     alt="example"
+              //     className="staffCardImage"
+              //     style={{
+              //       // height: "350px",
+              //       // width: "100%",
+              //       // borderTopLeftRadius: "150px",
+              //       // borderTopRightRadius: "150px",
+              //     }}
+              //     src={Joaco}
+              //     // width={100}
+              //     // height={0}
+              //   />
+              // }
+              // cover={<UserOutlined style={{ fontSize: "120px" }} />}
             >
               {" "}
               <Card.Meta
@@ -100,7 +131,13 @@ export default function Staff() {
                     M.P. 1-41857 <br />
                     M.F. T° 509 F° 403 <br />
                     jpatino@cuestaspatino.com.ar <br />
-                    Telefono 3517472345
+                    <Link
+                      href={
+                        "https://www.linkedin.com/in/patinojoaquin/"
+                      }
+                    >
+                      <LinkedinOutlined style={{ fontSize: "20px" }} />
+                    </Link>
                   </p>
                 }
               />

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Col, FloatButton, Layout, Menu, Row } from "antd";
 import { Header, Content, Footer } from "antd/es/layout/layout";
 import { WhatsAppOutlined } from "@ant-design/icons";
-import Logos_CuestasPatiño from "../../public/img/Logos_CuestasPatiño_Sinfondo-03.png";
+import Logos_CuestasPatiño from "../../public/img/Logos_CuestasPatiño_Sinfondo_Mesa de trabajo 1.png";
 import Image from "next/image";
 
 import "./globals.css";
@@ -26,10 +26,10 @@ const items = [
     key: "1",
     label: <Link href="/">Inicio</Link>,
   },
-  {
-    key: "2",
-    label: <Link href="/aboutUs">Quienes somos</Link>,
-  },
+  // {
+  //   key: "2",
+  //   label: <Link href="/aboutUs">Quienes somos</Link>,
+  // },
   {
     key: "3",
     label: <Link href="/practiceAreas">Servicios</Link>,
@@ -65,8 +65,8 @@ export default function RootLayout({
               <div className="demo-logo">
                 <Image
                   alt="logo"
-                  width={150}
-                  height={150}
+                  width={200}
+                  height={200}
                   src={Logos_CuestasPatiño}
                 />
               </div>
@@ -83,16 +83,15 @@ export default function RootLayout({
             {children}
             <Link
               href={
-                "https://api.whatsapp.com/send?phone=5493517472345&text=Hola,%20quisiera%20hacer%20una%20consulta%20..."
+                "https://api.whatsapp.com/send?phone=5493513086599&text=Hola,%20quisiera%20hacer%20una%20consulta%20..."
               }
             >
               <FloatButton
                 shape="circle"
                 type="default"
-                // style={{ backgroundColor: "#00b96b" }}
-
+                style={{ height: "60px", width: "60px" }}
                 tooltip={<div>Mas informacion</div>}
-                icon={<WhatsAppOutlined />}
+                icon={<WhatsAppOutlined style={{ fontSize: "25px", textAlign: "center" }}/>}
               />
             </Link>
           </Content>
@@ -100,7 +99,7 @@ export default function RootLayout({
             <FooterBar />
             
           </Footer>
-          <Row style={{ backgroundColor: "black", padding: "10px 0 10px 0" }}>
+          {/* <Row style={{ backgroundColor: "black", padding: "10px 0 10px 0" }}>
               <Col
                 span={24}
                 style={{ display: "flex", justifyContent: "center" }}
@@ -109,7 +108,7 @@ export default function RootLayout({
                   CuestasPatiño ©2024 Created by <Link href="https://www.linkedin.com/in/juan-frattin/">Juan Frattin</Link>
                 </p>
               </Col>
-            </Row>
+            </Row> */}
         </Layout>
       </body>
     </html>

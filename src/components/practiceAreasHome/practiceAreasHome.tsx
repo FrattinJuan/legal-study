@@ -11,59 +11,29 @@ export default function PracticeAreas() {
       <Row className="banner">
         <Col span={24}>
           <Title className="bannerTitle" level={2}>
-            Nuestros Enfoque
+            Servicios
           </Title>
         </Col>
         <Col style={{ textAlign: "justify" }} span={18} offset={3}>
           <Col span={24}>
-            <Text className="bannerText">
-              <Text strong className="bannerTextStrong">
-                {" "}
-                <StarFilled />
-                Asesoramiento Integral:
-              </Text>{" "}
-              Proporcionamos asesoramiento personalizado en diversas áreas del
-              derecho, protegiendo los intereses de nuestros clientes y
-              fomentando su desarrollo.
-              <br />{" "}
-              <Text strong className="bannerTextStrong">
-                {" "}
-                <StarFilled />
-                Resolución de Conflictos:
-              </Text>{" "}
-              Nos destacamos en negociaciones y litigios, logrando soluciones
-              eficaces y prontas para nuestros clientes.
-              <br />
-              <Text strong className="bannerTextStrong">
-                {" "}
-                <StarFilled />
-                Excelencia y Profesionalismo:
-              </Text>{" "}
-              Nuestro equipo está altamente capacitado y trabaja
-              colaborativamente para superar las expectativas de nuestros
-              clientes.
-              <br />{" "}
-              <Text strong className="bannerTextStrong">
-                {" "}
-                <StarFilled />
-                Atención Personalizada:
-              </Text>{" "}
-              Construimos relaciones de confianza a largo plazo, ofreciendo un
-              servicio cercano y altamente profesional.
-              <br />
-              <Text strong className="bannerTextStrong">
-                {" "}
-                <StarFilled />
-                Innovación y Tecnología:
-              </Text>{" "}
-              Utilizamos las últimas tecnologías legales para optimizar nuestros
-              procesos y brindar servicios de alta calidad.
+          <Text className="bannerText">
+            En CUESTAS - PATIÑO, ofrecemos una amplia gama de servicios legales
+            diseñados para satisfacer las necesidades de cada cliente. Nuestro
+            enfoque innovador y personalizado garantiza soluciones efectivas que
+            protegen y promueven los intereses de nuestros clientes.
             </Text>
           </Col>
-          <Col span={24} style={{display: "flex", justifyContent: "center", marginTop: "5%"}}>
+          <Col
+            span={24}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "5%",
+            }}
+          >
             <Link href={"/practiceAreas"}>
               <Button type="default" size="large" icon={<InfoCircleOutlined />}>
-                Más informacion
+                Más información 
               </Button>
             </Link>
           </Col>

@@ -3,23 +3,23 @@
 .practiceAreasTitle {
   font-family: "Garamond", serif;
   color: white !important;
-  margin-top: 25vh;
+  margin-top: 5vh;
 }
 .practiceAreasSubtitle {
   font-family: "Alegreya Sans", serif;
   color: white !important;
   text-align: justify;
-  margin-top: 7vh;
-  margin-bottom: 41vh !important;
+  margin-top: 3vh;
+  margin-bottom: 7vh !important;
 }
 .practiceAreasRow {
   background-color: $secondary-color !important;
 }
 .practiceAreasRow2 {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 .practiceAreasCollapse {
-  background-color: $primary-color !important;
+  background-color: $secondary-color !important;
   // color: white!important;
 }
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {

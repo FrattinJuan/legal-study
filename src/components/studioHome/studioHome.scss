@@ -1,20 +1,56 @@
-@import '../../app/variables.module.scss';
+@import "../../app/variables.module.scss";
 
 .studioHomeCard {
-    background-color: $primary-color;
-    border: none;
-    border-radius: 0;
-    margin-top: 10%;
-    width: 100%;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 0;
+  margin-top: 10%;
+  width: 100%;
+
+  .studioHomeGrid1 {
+    width: 60%;
+  }
+
+  .studioHomeGrid2 {
+    width: 40%;
+    height: 570px;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .studioHomeGrid1 {
+      width: 100%;
+    }
+
+    .studioHomeGrid2 {
+      width: 0%;  
+    }
+    
+  }
 }
 
 .studioHomeTitle {
-    font-family: 'Garamond', serif;
-    color: white!important;
+  font-family: "Garamond", serif;
+  color: white !important;
 }
 
 .studioHomeParagraph {
-    text-align: justify;
-    font-family: 'Alegreya Sans', serif;
-    color: white;
+  text-align: justify;
+  font-family: "Alegreya Sans", serif;
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.studioHomeText {
+  // margin-top: 50px!important;
+  margin-bottom: 0 !important;
+  text-align: justify;
+  font-family: "Alegreya Sans", serif;
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.studioHomeTextStrong {
+  font-family: "Alegreya Sans", serif;
+  color: white;
+  font-size: 15px;
 }

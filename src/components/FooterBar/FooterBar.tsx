@@ -11,6 +11,7 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../../public/img/Logos_CuestasPatiño_Sinfondo-03.png";
 import Link from "next/link";
+import TypedInputNumber from "antd/es/input-number";
 
 export default function FooterBar() {
   const data = [
@@ -88,12 +89,16 @@ export default function FooterBar() {
             alignItems: "center",
           }}
         >
-          <Typography.Text strong>
-            <CopyrightOutlined />
-            {` 2024 Cuestas Patiño.`}
-          </Typography.Text>
-          <br />
-          <Typography.Text>{` Todos los derechos reservados. `}</Typography.Text>
+          <Typography.Paragraph>
+            <Typography.Text strong>
+              <CopyrightOutlined />
+              {` 2024 Cuestas Patiño.`}
+            </Typography.Text>
+            <br />
+            <Typography.Text>{` Todos los derechos reservados. `}</Typography.Text>
+            <br />
+            <Link href="https://www.linkedin.com/in/juan-frattin/"><Typography.Text keyboard strong>Desarrollado por Juan Frattin</Typography.Text></Link>
+          </Typography.Paragraph>
         </Col>
       </Row>
     </>

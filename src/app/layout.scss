@@ -16,3 +16,6 @@
 .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after {
   border-bottom-color: $secondary-color !important;
 }
+.ant-float-btn .ant-float-btn-body .ant-float-btn-content .ant-float-btn-icon{
+  width: 40px;
+}
