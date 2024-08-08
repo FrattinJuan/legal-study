@@ -26,7 +26,7 @@ export default function StudioHome() {
             bordered={false}
             className="studioHomeCard"
           >
-            <Card.Grid className="studioHomeGrid1" hoverable={false} >
+            <Card.Grid className="studioHomeGrid1" hoverable={false}>
               <Row>
                 <Col>
                   <Title className="studioHomeTitle" level={3}>
@@ -52,14 +52,14 @@ export default function StudioHome() {
                     largo plazo.
                   </Paragraph>
                 </Col>
-                <Col style={{marginTop: "28px"}}>
+                <Col style={{ marginTop: "28px" }}>
                   <Paragraph className="studioHomeText">
                     <Text strong className="studioHomeTextStrong">
                       {" "}
                       • Asesoramiento Integral:
                     </Text>{" "}
                     Proporcionamos asesoramiento personalizado en diversas áreas
-                    del derecho, protegiendo los intereses de nuestros clientes
+                    del derecho,  protegiendo los intereses de nuestros clientes
                     y fomentando su desarrollo.
                     <br />{" "}
                     <Text strong className="studioHomeTextStrong">
@@ -94,7 +94,7 @@ export default function StudioHome() {
                 </Col>
               </Row>
             </Card.Grid>
-            <Card.Grid className="studioHomeGrid2" hoverable={false} >
+            <Card.Grid className="studioHomeGrid2" hoverable={false}>
               <Image
                 src={legalStudy}
                 alt="studio"

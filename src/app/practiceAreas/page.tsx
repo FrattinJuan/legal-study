@@ -10,7 +10,7 @@ import {
   AreaChartOutlined,
   AuditOutlined,
   CommentOutlined,
-  FileDoneOutlined 
+  FileDoneOutlined,
 } from "@ant-design/icons";
 import SocialBar from "@/components/socialBar/socialBar";
 import "./practiceAreas.scss";
@@ -22,7 +22,7 @@ export default function Page() {
       key: "1",
       label: (
         <>
-          <AreaChartOutlined  className="practiceAreasIcon" />
+          <AreaChartOutlined className="practiceAreasIcon" />
           {" Asesoramiento Empresarial"}
         </>
       ),
@@ -40,7 +40,7 @@ export default function Page() {
       key: "2",
       label: (
         <>
-          <FileDoneOutlined  className="practiceAreasIcon" />
+          <FileDoneOutlined className="practiceAreasIcon" />
           {"Derecho Civil y Comercial"}
         </>
       ),
@@ -87,8 +87,9 @@ export default function Page() {
       children: (
         <p>
           {" "}
-          ● Defensa del imputado en procesos penales. ● Representación del
-          querellante.
+          ● Defensa del imputado en procesos penales.
+          <br />
+          ● Representación del querellante.
           <br />
           ● Asesoramiento en delitos corporativos y económicos.
           <br />

@@ -11,7 +11,7 @@ import "./carouselHome.scss";
 
 export default function CarouselHome() {
   return (
-    <Carousel arrows autoplay>
+    <Carousel arrows autoplay autoplaySpeed={10000}>
       <div className="carouselHome">
         <Image
           src={Tribu}

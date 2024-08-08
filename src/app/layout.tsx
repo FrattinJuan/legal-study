@@ -91,7 +91,7 @@ export default function RootLayout({
                 type="default"
                 style={{ height: "60px", width: "60px" }}
                 tooltip={<div>Mas informacion</div>}
-                icon={<WhatsAppOutlined style={{ fontSize: "25px", textAlign: "center" }}/>}
+                icon={<WhatsAppOutlined style={{ fontSize: "25px", textAlign: "center", color: "#460305" }}/>}
               />
             </Link>
           </Content>

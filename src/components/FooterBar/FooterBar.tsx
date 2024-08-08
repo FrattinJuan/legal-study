@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import Image from "next/image";
 import React from "react";
-import logo from "../../../public/img/Logos_CuestasPatiño_Sinfondo-03.png";
+import logo from "../../../public/img/Logos_CuestasPatiño_Sinfondo_Mesa de trabajo 1.png";
 import Link from "next/link";
 import TypedInputNumber from "antd/es/input-number";
 
@@ -62,14 +62,14 @@ export default function FooterBar() {
           lg={{
             span: 8,
           }}
-          style={{ display: "flex", justifyContent: "center" }}
+          style={{ display: "flex", justifyContent: "center"}}
         >
           <List
             dataSource={data}
-            style={{ textAlign: "left" }}
+            style={{ textAlign: "left", color: '#460305!important'  }}
             renderItem={(item) => (
               <Link href={item.link}>
-                <List.Item>
+                <List.Item style={{ color: '#460305' }}>
                   {item.icon} {` ` + item.title}
                 </List.Item>
               </Link>

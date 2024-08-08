@@ -49,7 +49,7 @@ export default function SocialBar() {
               icon={<WhatsAppOutlined />}
             />
           </Link>
-            <Link href={"https://cuestaspatino.com.ar"}>
+            <Link href={"mailto:info@cuestaspatino.com.ar"}>
           <Button
             className="socialBarButton"
             shape="circle"

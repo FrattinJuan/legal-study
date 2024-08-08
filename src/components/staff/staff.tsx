@@ -69,7 +69,7 @@ export default function Staff() {
                     <br />
                     <Link
                       href={
-                        "https://www.linkedin.com/in/guadalupe-cuestas-6b544719b/"
+                        "https://www.linkedin.com/in/guadalupe-cuestas-807258268/"
                       }
                     >
                       <LinkedinOutlined style={{ fontSize: "20px" }} />
