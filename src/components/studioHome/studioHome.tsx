@@ -94,13 +94,13 @@ export default function StudioHome() {
                 </Col>
               </Row>
             </Card.Grid>
-            <Card.Grid className="studioHomeGrid2" hoverable={false}>
+            {/* <Card.Grid className="studioHomeGrid2" hoverable={false}>
               <Image
                 src={legalStudy}
                 alt="studio"
                 style={{ width: "100%", height: "100%" }}
               />
-            </Card.Grid>
+            </Card.Grid> */}
           </Card>
         </Col>
       </Row>
